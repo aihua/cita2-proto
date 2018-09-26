@@ -70,9 +70,10 @@ message BlockHeader {
 
 message BlockBody {
     // bytes32(H256) - array of utx hash
-    repeated bytes utx_hash = 1;
+    repeated bytes utx_hashes = 1;
 }
 
+// proposal block same as Block
 message Block {
     uint32 version = 1;
     BlockHeader header = 2;
